@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <div class="navbar" onmouseleave="hideNavbar()">
+        <h1 style="color: #fff;">My portfolio</h1>
+        <div>
+            <a href="#content" onclick="smoothScroll(event, 1000)">Me</a>
+            <a href="#portfolio" onclick="smoothScroll(event, 1000)">Portfolio</a>
+            <a href="#skills" onclick="smoothScroll(event, 1000)">Skills</a>
+        </div>
+    </div>
+
+    <!-- Burger Icon -->
+    <div class="burgir" id="burgir" onclick="toggleNavbar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Home Section -->
+        <section class="home">
+            <div class="intro">
+                <div class="text-content">
+                    <h2>Hi, I'm</h2>
+                    <h1>Orillos, Lark Dominique J.</h1>
+                    <p>I'm a student at the University of the Cordilleras. <br>Currently taking Information Technology majoring in <br>
+                        Web Technologies.</p>
+                    <h1>My Specialty</h1>
+                    <ul>
+                        <li>Front End</li>
+                        <li>Back End</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="picture-container">
+                <div class="picture">
+                    <img src="https://github.com/leanbeefs/finalz/blob/main/retouch_2024020617302221.png?raw=true" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="title-container">
+                <h2 class="title">PORTFOLIO</h2>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <a href="https://leanbeefs.github.io/indexhhtml/" target="_blank">
+                        <img src="https://github.com/leanbeefs/cc14/blob/main/icone-html-bleue.png?raw=true" alt="HTML Activity">
+                        <div class="container">
+                            <h4><b>HTML Activity</b></h4>
+                        </div>
+                    </a>
+                </div>
+            <div class="card">
+                <a href="https://leanbeefs.github.io/ccss/" target="_blank">
+                    <img src="https://github.com/leanbeefs/cc14/blob/main/919826.png?raw=true" alt="CSS Activity">
+                    <div class="container">
+                        <h4><b>CSS Activity</b></h4>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://leanbeefs.github.io/finalz/" target="_blank">
+                    <img src="https://github.com/leanbeefs/cc14/blob/main/github-icon-2048x1988-jzvzcf2t.png?raw=true" alt="CIT14 website">
+                    <div class="container">
+                        <h4><b>CIT14 website</b></h4>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="title-container">
+                <h2 class="title">SKILLS</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-label">HTML</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%;">40%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 45%;">45%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 10%;">10%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">Bootstrap</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 20%;">20%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-label">jQuery</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 10%;">10%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#" onclick="copyEmail(event)"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/lark.orillos.15" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lean._.beef/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://discordapp.com/channels/@me/Furiousss#4532" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="smoothScrollToTop(1000)">Back to top</button>
+
+    <!-- JS Ready -->
+    <script src="script.js"></script>
+</body>
+</html>
